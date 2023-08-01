@@ -5,7 +5,13 @@ r_s = ''.join(reversed(s))
 print('antes: ', s)
 print(r_s)
 
-# remover acentos
+for i in unicodedata.normalize('NFKD', s):
+    # se é acento ou cedilha retorna != 0, após decompor
+    print(i + 'combining: ' + str(unicodedata.combining(i)))
+
+print(unicodedata.name('ç'))
+print(unicodedata.lookup('LATIN SMALL LETTER C WITH CEDILLA'))
+# remover espaços
 s_n = ''.join(ch for ch in unicodedata.normalize('NFKD', s)
               if not unicodedata.combining(ch))
 r_s = ''.join(reversed(s_n))
