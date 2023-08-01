@@ -5,7 +5,7 @@ r_s = ''.join(reversed(s))
 print('antes: ', s)
 print(r_s)
 
-# remover espaços
+# remover acentos
 s_n = ''.join(ch for ch in unicodedata.normalize('NFKD', s)
               if not unicodedata.combining(ch))
 r_s = ''.join(reversed(s_n))
