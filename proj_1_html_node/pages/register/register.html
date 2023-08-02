@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Registro - Controle de gastos</title>
+    </head>
+    <body class="centralize">
+        <form>
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <input type="email" name="email" onchange="onChangeEmail()" placeholder="seu@email.com" id="email"/>
+                <div class="error" id="email-required-error">E-mail é obrigatório</div>
+                <div class="error" id="email-invalid-error">E-mail é inválido</div>
+            </div>
+            <div class="form-field">
+                <div><label>Senha: </label></div>
+                <input type="password" placeholder="Senha" id="password" onchange="onChangePassword()"/>
+                <div class="error" id="password-required-error">Senha é obrigatória</div>
+                <div class="error" id="password-min-length-error">Senha deve ter no mínimo 6 caracteres</div>
+            </div>
+            <div class="form-field">
+                <div><label>Confirmar Senha: </label></div>
+                <input type="password" placeholder="Confirmar Senha" id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+                <div class="error" id="password-doesnt-match-error">Senha e Confirmar Senha devem ser iguais</div>
+            </div>
+            <div>
+                <button type="button" class="solid" disabled="true" id="register-button" onclick="register()">Registrar</button>
+            </div>
+            <div>
+                <button type="button" class="clear">Login</button>
+            </div>
+        </form>
+    </body>
+    <link rel="stylesheet" src="../../global.css">
+    <link rel="stylesheet" src="register.css">
+    <script src="register.js"></script>
+    <script src="../../validations.js"></script>
+    <script src="../../loading.js"></script>
+</html>
