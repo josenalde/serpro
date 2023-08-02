@@ -23,7 +23,7 @@ public class Palindrome {
   }
 	
    //compara a entrada normal e invertida, ignorando letras maiúsculas ou minúsculas 	
-  if (s.equalsIgnoreCase(r)) System.out.println("S");
+  if (s.equalsIgnoreCase(r)) System.out.println("S"); //System.out.println(myStr1.compareToIgnoreCase(myStr2)); // similar ao strcmp do C
   else System.out.println("N");	
  }     
 
