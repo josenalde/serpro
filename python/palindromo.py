@@ -11,7 +11,7 @@ for i in unicodedata.normalize('NFKD', s):
 
 print(unicodedata.name('ç'))
 print(unicodedata.lookup('LATIN SMALL LETTER C WITH CEDILLA'))
-# remover espaços
+# remover acentos
 s_n = ''.join(ch for ch in unicodedata.normalize('NFKD', s)
               if not unicodedata.combining(ch))
 r_s = ''.join(reversed(s_n))

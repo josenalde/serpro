@@ -13,5 +13,4 @@ for l in v:
     c_v += s.count(l)
 
 
-print(s + 'with: \n')
-print(str(c_v) + 'vowels')
+print(s + ' with: ' + str(c_v) + ' vowels')
