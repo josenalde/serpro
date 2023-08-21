@@ -18,6 +18,7 @@ def binary_search(v, begin, end, n):
 
 test_1 = list(range(0, 1000000))
 # random.shuffle(test_1)
+#test_1.sort()
 n = 1000000
 tstart = time.time()
 pos = binary_search(test_1, 0, len(test_1)-1, n)
