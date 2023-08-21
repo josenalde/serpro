@@ -24,3 +24,10 @@ r.sort(function (a, b) {
 });
 console.log(r);
 console.log(binary_search(r, 101));
+
+t = []
+t.push(2);
+t.push(10);
+console.log(t);
+t.pop()
+console.log(t.length)
